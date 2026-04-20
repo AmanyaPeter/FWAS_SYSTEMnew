@@ -1,0 +1,14 @@
+# Ignore SQLite database to prevent sensitive data checks
+database/fwas.db
+
+# Exclude generated exports
+exports/*.csv
+exports/*.xlsx
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE configuration
+.vscode/
+.idea/
