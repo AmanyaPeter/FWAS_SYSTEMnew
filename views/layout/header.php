@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><title>FWAS</title></head>
+<head>
+    <title>FWAS</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
 <body>
     <h1>Finance Workflow Assistance System</h1>
     <nav>

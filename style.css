@@ -1,0 +1,92 @@
+/* style.css - FWAS Main Stylesheet */
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #1e293b;
+    margin-top: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border: none;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #475569;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+input, select, textarea {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: 500;
+    color: #475569;
+    display: block;
+    margin-bottom: 5px;
+}

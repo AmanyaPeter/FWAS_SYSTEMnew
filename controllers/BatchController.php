@@ -26,6 +26,7 @@ class BatchController {
             }
         }
         header('Location: /batches');
+        exit;
     }
     public function show($id) {
         $batch = $this->batchModel->find($id);

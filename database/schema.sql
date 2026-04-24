@@ -51,5 +51,5 @@ CREATE TABLE BatchAuditLog (
 );
 
 -- Insert default admin user (password: admin123)
-INSERT INTO User (username, password, role) VALUES ('admin', '$2y$10$w09u7C9QO2t5yT9GjLXYb.L1iT0j6S.b2F1bK7e1G/b3b3Q8Yc9qC', 'Admin');
-INSERT INTO User (username, password, role) VALUES ('officer', '$2y$10$w09u7C9QO2t5yT9GjLXYb.L1iT0j6S.b2F1bK7e1G/b3b3Q8Yc9qC', 'Officer');
+INSERT INTO User (username, password, role) VALUES ('admin', '$2y$10$QTKSP06lAB7lrLFqo0REYujH6rC.SJBv0LA4E18PLSoxYwXTcNo56', 'Admin');
+INSERT INTO User (username, password, role) VALUES ('officer', '$2y$10$QTKSP06lAB7lrLFqo0REYujH6rC.SJBv0LA4E18PLSoxYwXTcNo56', 'Officer');
