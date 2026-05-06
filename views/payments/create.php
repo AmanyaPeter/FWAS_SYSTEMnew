@@ -1,16 +1,37 @@
 <?php require_once __DIR__ . '/../layout/header.php'; ?>
-<h2>Record Payment</h2>
-<form method="POST" action="/payments/create">
-    <label>Supplier:</label><br>
-    <select name="supplier_id" required>
-        <?php foreach ($suppliers as $s): ?>
-        <option value="<?php echo $s['id']; ?>"><?php echo htmlspecialchars($s['name']); ?> (TIN: <?php echo htmlspecialchars($s['tin']); ?>)</option>
-        <?php endforeach; ?>
-    </select><br>
-    <label>Invoice Number:</label><br>
-    <input type="text" name="invoice_number" required><br>
-    <label>Amount:</label><br>
-    <input type="number" name="amount" step="0.01" min="0.01" required><br><br>
-    <button type="submit">Record Payment</button>
-</form>
+
+<div class="topbar">
+    <div>
+        <a href="/payments" class="btn btn-ghost btn-sm" style="margin-bottom:10px;">← Back to Payments</a>
+        <div class="page-title">Record Payment</div>
+    </div>
+</div>
+
+<div class="card" style="max-width: 600px;">
+    <form method="POST" action="/payments/create">
+        <div class="form-grid one">
+            <div class="field">
+                <label>Supplier</label>
+                <select name="supplier_id" required>
+                    <?php foreach ($suppliers as $s): ?>
+                    <option value="<?php echo $s['id']; ?>"><?php echo htmlspecialchars($s['name']); ?> (TIN: <?php echo htmlspecialchars($s['tin']); ?>)</option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <div class="field">
+                <label>Invoice Number</label>
+                <input type="text" name="invoice_number" placeholder="e.g. INV-001" required>
+            </div>
+            <div class="field">
+                <label>Amount (UGX)</label>
+                <input type="number" name="amount" step="0.01" min="0.01" placeholder="0.00" required>
+            </div>
+        </div>
+        <div style="margin-top: 24px; display: flex; gap: 10px;">
+            <button type="submit" class="btn btn-primary">Record Payment</button>
+            <a href="/payments" class="btn btn-ghost">Cancel</a>
+        </div>
+    </form>
+</div>
+
 <?php require_once __DIR__ . '/../layout/footer.php'; ?>
