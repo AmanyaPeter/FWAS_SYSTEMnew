@@ -66,6 +66,7 @@ body {
   border: none; border-radius: 8px; font-family: 'Outfit', sans-serif;
   font-size: 15px; font-weight: 600; cursor: pointer;
   transition: opacity .15s, transform .1s;
+  text-decoration: none;
 }
 .auth-btn:hover { opacity: .9; transform: translateY(-1px); }
 .auth-hint { text-align: center; color: var(--muted); font-size: 12px; margin-top: 20px; }
@@ -271,6 +272,7 @@ tr:hover td { background: var(--surface2); }
   width: 30px; height: 30px; border-radius: 6px; border: none; cursor: pointer;
   display: flex; align-items: center; justify-content: center; font-size: 14px;
   transition: all .15s;
+  text-decoration: none;
 }
 .icon-btn.edit { background: var(--accent-light); color: var(--accent); }
 .icon-btn.edit:hover { background: var(--accent); color: #fff; }
